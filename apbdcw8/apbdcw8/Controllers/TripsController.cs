@@ -3,6 +3,7 @@ using apbdcw8.Services;
 using Microsoft.AspNetCore.Mvc;
 namespace apbdcw8.Controllers;
 
+
 [ApiController]
 [Route("api/[controller]")]
 public class TripsController : ControllerBase
@@ -13,7 +14,7 @@ public class TripsController : ControllerBase
     {
         _tripService = tripService;
     }
-
+    // GET /api/trips
     [HttpGet]
     public async Task<IActionResult> GetTrips()
     {
